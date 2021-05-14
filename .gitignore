@@ -582,4 +582,4 @@ FodyWeavers.xsd
 *.tlog
 
 # End of https://www.toptal.com/developers/gitignore/api/visualstudiocode,visualstudio,webstorm,sublimetext,archive,archives
-node_modules
+/node_modules
