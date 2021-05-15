@@ -1,0 +1,77 @@
+body{
+    overflow: hidden;
+}
+span{
+    font-size: 15px;
+    color: #ACADAD;
+}
+.part14-main{
+    background-image: url(img/Img\ Museum.png);
+    background-size: cover;
+    height: 730px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-position: center center;
+    /* overflow: hidden; */
+}
+.part14-t{
+    margin-top:180px;
+    color: #ACADAD;
+    font-size: 13px;
+    line-height: 20px;
+    letter-spacing: 1.08px;
+    text-align: center;
+    font-weight: 700;
+}
+.part14-t2{
+    font-family: 'Overpass', sans-serif;
+    font-style: normal;
+    margin-top: 0;
+    font-size: 46px;
+    line-height: 64px;
+    letter-spacing:-1.5px;
+    text-align: center;
+    font-weight: 700;
+}
+.part14-inp input{
+    height: 49px;
+    width: 345px;
+    background: #FFFFFF;
+    border-radius: 4px;
+    padding-left: 10px;
+}
+.part14-inp{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+@media (max-width:560px) {
+    .part14-btn{
+        margin-top: 5px;
+
+    }
+ }
+.part14-btn{
+    height: 56px;
+    width: 162px;
+    background-color: #0AD1BD;
+    border: none;
+    border-radius: 2px;
+    margin-left: 5px;
+    font-size: 15px;
+    line-height: 32px;
+    text-align: center;
+    font-weight: 700;
+}
+
+.part14-t3{
+    font-family: 'Overpass', sans-serif;
+    font-style: normal;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    font-weight: 300;
+    margin-top: 50px;
+}
