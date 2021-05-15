@@ -1,8 +1,4 @@
-<<<<<<< HEAD
 
-
-=======
->>>>>>> 6467f17a465cb680825f4fa87040f37f932b32bc
 * {
   margin: 0;
   padding: 0;
@@ -92,10 +88,9 @@
   outline: none;
   border: none;
   padding: 14px 40px;
-<<<<<<< HEAD
+
   margin-top: 15px;
-=======
->>>>>>> 6467f17a465cb680825f4fa87040f37f932b32bc
+
 }
 @media only screen and (max-width: 1240px) {
   .hero_b1 {

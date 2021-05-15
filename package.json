@@ -21,5 +21,8 @@
   "bugs": {
     "url": "https://github.com/RitaYeghiazaryan/wearethechempions/issues"
   },
-  "homepage": "https://github.com/RitaYeghiazaryan/wearethechempions#readme"
+  "homepage": "https://github.com/RitaYeghiazaryan/wearethechempions#readme",
+  "devDependencies": {
+    "gulp-autoprefixer": "^7.0.1"
+  }
 }
