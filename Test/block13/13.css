@@ -1,0 +1,99 @@
+	body{
+	background-image: url(img/whatch.jpg);
+	background-size: cover;
+}
+.main13{
+display: flex;
+direction: row;
+flex-wrap: wrap;
+justify-content: space-between;
+}
+
+.rightDiv{
+	margin-top: 80px;
+}
+
+.smallText{
+
+font-family: Overpass;
+font-style: normal;
+font-weight: bold;
+font-size: cover;
+line-height: 20px;
+text-transform: uppercase;
+color: #999999;
+margin-top:100px;
+margin-left: 200px;
+
+
+}
+.textCenter{
+
+
+width: 625px;
+height: 211px;
+font-family: Overpass;
+font-style: normal;
+font-weight: bold;
+font-size: 46px;
+line-height: 64px;
+margin-top: 90px;
+margin-left: 200px;
+
+
+
+}
+
+.callButton{
+
+
+font-family: Overpass;
+font-style: normal;
+font-weight: bold;
+font-size: 15px;
+line-height: 32px;
+color: #000000;
+background-color: #0AD1BD;
+border-radius: 10px;
+margin-top:120px;
+margin-left: 200px;
+
+}
+.blockTop{
+	width: 360px;
+	height: 200px;
+	background-color: #FFFFFF;
+	right: 50px;
+	top: 20px;
+}
+.blockCenter{
+	width: 360px;
+	height: 200px;
+		background-color: #B8E6E1;
+			right: 50px;
+			top: 250px;
+
+
+
+}
+.blockBottom{
+	width: 360px;
+	height: 200px;
+		background-color: #FFFFFF;
+			right: 50px;
+			top: 480px;
+
+
+
+}
+#bigtext{
+	width: 200px;
+	height: 50px;
+	
+
+}
+#smalltext{
+	width: 200px;
+	height: 50px;
+	color:#7A7A7A;
+}
