@@ -1,7 +1,6 @@
 {
   "name": "test",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -17,6 +16,11 @@
   },
   "homepage": "https://github.com/RitaYeghiazaryan/Test#readme",
   "dependencies": {
-    "gulp": "^4.0.2"
-  }
+    "gulp": "^4.0.2",
+    "gulp-css-minify": "^0.9.2",
+    "gulp-html-minify": "^0.0.14",
+    "gulp-htmlmin": "^5.0.1"
+  },
+  "keywords": [],
+  "description": ""
 }
