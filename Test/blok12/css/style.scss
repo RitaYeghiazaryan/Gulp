@@ -1,0 +1,75 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@300;400;700&display=swap');
+$overpass: 'Overpass',
+sans-serif;
+body {
+    width: 100%;
+    height: 100vh;
+    background-image: url('../img/Img\ Designer\ Chair.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    font-family: $overpass;
+}
+
+.part12-main {
+    margin: auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .part12-headertext {
+        color: #999999;
+        font-size: 13px;
+        font-weight: 700;
+        margin-top: 160px;
+        text-transform: uppercase;
+        letter-spacing: 1.08px;
+    }
+    .part12-title {
+        color: #000000;
+        font-size: 46px;
+        font-weight: 700;
+        margin-top: 28px;
+    }
+    .part12-btn {
+        width: 240px;
+        height: 60px;
+        background: #0AD1BD;
+        font-size: 15px;
+        font-family: $overpass;
+        border-radius: 4px;
+        margin-top: 40px;
+        margin-bottom: 40px;
+        transition: 0.3s;
+        a {
+            font-weight: 700;
+            text-decoration: none;
+            color: black;
+            line-height: 60px;
+        }
+        &:hover {
+            opacity: 0.7;
+        }
+    }
+    .part12-footertext {
+        color: #999999;
+        font-size: 16px;
+        font-weight: 300;
+    }
+    @media screen and (max-width: 950px) {
+        .part12-title {
+            font-size: 30px;
+            margin-top: 50px;
+            line-height: 1;
+        }
+        .part12-btn {
+            margin-top: 20px
+        }
+    }
+}
