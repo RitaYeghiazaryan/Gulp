@@ -587,5 +587,4 @@ FodyWeavers.xsd
 #Ignore Public dir
 public/*
 
-#Ignore Package-lock.json
-package-lock.json
+
