@@ -6,7 +6,7 @@ span{
     color: #ACADAD;
 }
 .part14-main{
-    background-image: url(img/Img\ Museum.png);
+    background-image: url(../img/Img\ Museum.png);
     background-size: cover;
     height: 730px;
     width: 100%;
@@ -14,7 +14,7 @@ span{
     flex-direction: column;
     align-items: center;
     background-position: center center;
-    /* overflow: hidden; */
+ 
 }
 .part14-t{
     margin-top:180px;

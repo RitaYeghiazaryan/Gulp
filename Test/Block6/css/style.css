@@ -5,7 +5,7 @@ body{
 .container_block6 {
     width: 100vw;
     height: 100vh;
-    background: url(image/Img.png);
+    background: url(../img/Img.png);
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;

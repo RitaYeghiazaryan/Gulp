@@ -72,7 +72,7 @@
     width: 489px;
     height: 100vh;
     position: relative;
-    background-image: url('img/Img\ Building.png');
+    background-image: url('../img/Img\ Building.png');
     background-size: cover;
     background-repeat: no-repeat;
 }
