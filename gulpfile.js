@@ -2,6 +2,8 @@ const gulp = require("gulp");
 const cssMinify = require("gulp-css-minify");
 const htmlmin = require("gulp-htmlmin");
 const autoprefixer = require('gulp-autoprefixer');
+const imagemin = require('gulp-imagemin');
+const flatten = require('gulp-flatten');
 //Arus
 gulp.task("minify", () => {
     return gulp
