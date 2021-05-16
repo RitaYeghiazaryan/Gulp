@@ -27,6 +27,7 @@
   },
   "homepage": "https://github.com/RitaYeghiazaryan/wearethechempions#readme",
   "devDependencies": {
-    "gulp-autoprefixer": "^7.0.1"
+    "gulp-autoprefixer": "^7.0.1",
+    "gulp-concat-css": "^3.1.0"
   }
 }

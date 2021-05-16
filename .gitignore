@@ -584,5 +584,8 @@ FodyWeavers.xsd
 # End of https://www.toptal.com/developers/gitignore/api/visualstudiocode,visualstudio,webstorm,sublimetext,archive,archives
 /node_modules
 
-#Ignore Publick dir
-public/
+#Ignore Public dir
+public/*
+
+#Ignore Package-lock.json
+package-lock.json
