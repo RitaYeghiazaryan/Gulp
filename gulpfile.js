@@ -5,8 +5,15 @@ const autoprefixer = require('gulp-autoprefixer');
 const imagemin = require('gulp-imagemin');
 const flatten = require('gulp-flatten');
 const concatCss = require('gulp-concat-css');
+const minifyjs = require('gulp-js-minify');
+
+const jsFilesSources = './Test/**/*.js'
+const jsFileDestination = './public/js'
+
+
 
 //Arus
+
 gulp.task("minify", () => {
     return gulp
         .src("Test/**/*.html")
@@ -74,4 +81,14 @@ gulp.task('cssconcat', function() {
 });
 
 
-gulp.task('develop', gulp.series('minify', 'autoprefixer', 'minifyCss'))
+//-------------------------------| Artashes |-----------------------
+gulp.task('minify-js', async () => {
+  gulp.src(jsFilesSources)
+    .pipe(minifyjs())
+    .pipe(gulp.dest(jsFileDestination));
+});
+
+
+gulp.task('develop', gulp.series('minify', 'autoprefixer', 'minifyCss', 'minify-js'))
+
+
