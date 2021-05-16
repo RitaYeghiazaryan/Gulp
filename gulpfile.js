@@ -23,7 +23,7 @@ gulp.task("minify", () => {
 
 gulp.task("minifyCss", function () {
   return gulp
-    .src("public/css/**/*.css")
+    .src("public/concatcss/all.css")
     .pipe(cssMinify())
     .pipe(gulp.dest("./public/css"));
 });
@@ -85,5 +85,5 @@ gulp.task("minify-js", async () => {
 
 gulp.task(
   "develop",
-  gulp.series("minify", "autoprefixer", "minifyCss", "minify-js")
+  gulp.series("minify", "autoprefixer", "minify-js","cssconcat", "minifyCss")
 );
