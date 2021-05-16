@@ -6,7 +6,8 @@ const imagemin = require("gulp-imagemin");
 const flatten = require("gulp-flatten");
 const concatCss = require("gulp-concat-css");
 const minifyjs = require("gulp-js-minify");
-
+const concat = require("gulp-concat");
+const sourcemaps = require("gulp-sourcemaps");
 const jsFilesSources = "./Test/**/*.js";
 const jsFileDestination = "./public/js";
 
@@ -77,13 +78,33 @@ gulp.task("cssconcat", function () {
     .pipe(concatCss("all.css"))
     .pipe(gulp.dest("./public/concatcss"));
 });
+//Arman concat
+gulp.task("jsconcat", function () {
+  return gulp
+    .src("Test/**/*.js")
+    .pipe(sourcemaps.init())
+    .pipe(concat("all.js"))
+    .pipe(sourcemaps.write())
+    .pipe(gulp.dest("./public/jsconcated"));
+});
 
 //-------------------------------| Artashes |-----------------------
 gulp.task("minify-js", async () => {
-  gulp.src(jsFilesSources).pipe(minifyjs()).pipe(gulp.dest(jsFileDestination));
+  gulp
+    .src("public/jsconcated/all.js")
+    .pipe(minifyjs())
+    .pipe(gulp.dest("./public/js"));
 });
 
 gulp.task(
   "develop",
-  gulp.series("minify", "autoprefixer", "minify-js","cssconcat", "minifyCss")
+  gulp.series(
+    "jsconcat",
+    "cssconcat",
+    "autoprefixer",
+    "minify",
+    "minifyCss",
+    "minify-js",
+    "imagemin"
+  )
 );
