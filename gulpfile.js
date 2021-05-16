@@ -47,12 +47,6 @@ gulp.task("imagemin", function() {
         .pipe(gulp.dest('./public/img'))
 })
 
-
-// verjum commenty hanel
-
-// gulp.task('develop', gulp.series('minify', 'autoprefixer', 'minifyCss'))
-
-
 // Laura
 // npm install --save-dev gulp-concat-css
 gulp.task('cssconcat', function () {
@@ -78,3 +72,6 @@ gulp.task('cssconcat', function () {
       .pipe(concatCss("all.css"))
       .pipe(gulp.dest('cssconcat/'));
   });
+
+  
+gulp.task('develop', gulp.series('minify', 'autoprefixer', 'minifyCss'))
