@@ -14,97 +14,82 @@ const jsFileDestination = "./public/js";
 //Arus
 
 gulp.task("minify", () => {
-  return gulp
-    .src("Test/block1/**/*.html")
-    .pipe(htmlmin({ collapseWhitespace: true }))
-    .pipe(gulp.dest("./public/html_compress"));
+    return gulp
+        .src("Test/block1/**/*.html")
+        .pipe(htmlmin({ collapseWhitespace: true }))
+        .pipe(gulp.dest("./public"));
 });
+
+
 
 //Rita
 
-gulp.task("minifyCss", function () {
-  return gulp
-    .src("public/concatcss/all.css")
-    .pipe(cssMinify())
-    .pipe(gulp.dest("./public/css"));
+gulp.task("minifyCss", function() {
+    return gulp
+        .src("./public/concatcss/*")
+        .pipe(cssMinify())
+        .pipe(gulp.dest("./public/css"));
 });
 
-//Mariam
-gulp.task("autoprefixer", function () {
-  return gulp
-    .src("Test/**/*.css")
-    .pipe(
-      autoprefixer({
-        cascade: false,
-      })
-    )
-    .pipe(gulp.dest("public/css"));
-});
-//end Mariam's code
-
-//Arshak
-
-gulp.task("imagemin", function () {
-  return gulp
-    .src(["Test/**/*{png,gif,jpg,jpeg,svg,ico}"])
-    .pipe(imagemin())
-    .pipe(flatten({ includeParents: 0 }))
-    .pipe(gulp.dest("./public/img"));
-});
 
 // Laura
 // npm install --save-dev gulp-concat-css
-gulp.task("cssconcat", function () {
-  return gulp
-    .src([
-      // gulp.src('./Test/**/*.css')
-      "Test/10/*.css",
-      "Test/block1/css/*.css",
-      "Test/Block3/*.css",
-      "Test/block4/css/*.css",
-      "Test/Block6/*.scss",
-      "Test/block13/*.css",
-      "Test/block14/*.css",
-      "Test/block15/Css/*.css",
-      "Test/block2/*.css",
-      "Test/block12/css/*.css",
-      "Test/part5/*.css",
-      "Test/part7/*.css",
-      "Test/part8/*.css",
-      "Test/part9/*.css",
-      "Test/part11/*.css",
-      "Test/part16/*.scss",
-    ])
-    .pipe(concatCss("all.css"))
-    .pipe(gulp.dest("./public/concatcss"));
-});
-//Arman concat
-gulp.task("jsconcat", function () {
-  return gulp
-    .src("Test/**/*.js")
-    .pipe(sourcemaps.init())
-    .pipe(concat("all.js"))
-    .pipe(sourcemaps.write())
-    .pipe(gulp.dest("./public/jsconcated"));
+gulp.task("cssconcat", function() {
+    return gulp.src('Test/**/*.css')
+        .pipe(concat("style.css"))
+        .pipe(gulp.dest("./public/concatcss"));
 });
 
+//Mariam
+gulp.task("autoprefixer", function() {
+    return gulp
+        .src("public/css/style.css")
+        .pipe(
+            autoprefixer({
+                cascade: false,
+            })
+        )
+        .pipe(gulp.dest("public/css"));
+});
+//end Mariam's code
 //-------------------------------| Artashes |-----------------------
-gulp.task("minify-js", async () => {
-  gulp
-    .src("public/jsconcated/all.js")
-    .pipe(minifyjs())
-    .pipe(gulp.dest("./public/js"));
+gulp.task("minify-js", async() => {
+    gulp
+        .src("public/jsconcated/all.js")
+        .pipe(minifyjs())
+        .pipe(gulp.dest("./public/js"));
+});
+
+//Arman concat
+gulp.task("jsconcat", function() {
+    return gulp
+        .src("Test/**/*.js")
+        .pipe(sourcemaps.init())
+        .pipe(concat("all.js"))
+        .pipe(sourcemaps.write())
+        .pipe(gulp.dest("./public/jsconcated"));
+});
+
+//Arshak
+
+gulp.task("imagemin", function() {
+    return gulp
+        .src(["Test/**/*{png,gif,jpg,jpeg,svg,ico}"])
+        .pipe(imagemin())
+        .pipe(flatten({ includeParents: 0 }))
+        .pipe(gulp.dest("./public/img"));
 });
 
 gulp.task(
-  "develop",
-  gulp.series(
-    "jsconcat",
-    "cssconcat",
-    "autoprefixer",
-    "minify",
-    "minifyCss",
-    "minify-js",
-    "imagemin"
-  )
+    "develop",
+    gulp.series(
+        "minify",
+        "cssconcat",
+        "minifyCss",
+        "autoprefixer",
+        "jsconcat",
+        "minify-js",
+
+        // "imagemin"
+    )
 );
