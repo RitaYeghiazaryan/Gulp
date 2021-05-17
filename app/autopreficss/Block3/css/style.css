@@ -1,0 +1,86 @@
+.ray__wrapper {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+/* Block 3 */
+.b3__content {
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+
+  -webkit-box-pack: center;
+
+  -webkit-justify-content: center;
+
+      -ms-flex-pack: center;
+
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.b3__title {
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.b3__p {
+  opacity: 0.5;
+  width: 50%;
+  font-size: 17px;
+  text-align: center;
+  line-height: 35px;
+}
+.b3__img {
+  width: 300px;
+}
+.b3__button {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  /* padding-left: 50px; */
+  margin-bottom: 50px;
+
+  width: 300px;
+}
+.b3__image {
+  width: 50%;
+}
+.b3__btn1 {
+  background-color: #0ad1bd;
+  outline: none;
+  border: none;
+  width: 200px;
+  height: 50px;
+  color: white;
+  margin-left: 15px;
+}
+.b1-right {
+  background-color: white;
+  color: black;
+  border: 1px solid black;
+}
+.block_3bg {
+  width: 1140px;
+  height: 288px;
+  background-image: url("../img/Ananas.jpg");
+  background-size: cover;
+  background-position: center center;
+}

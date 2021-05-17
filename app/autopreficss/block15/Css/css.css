@@ -1,0 +1,150 @@
+.galery {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    position: absolute;
+    width: 100%;
+    height: 750px;
+    left: 0px;
+    top: -1px;
+    background: -webkit-gradient(linear, left bottom, left top, from(rgba(255, 255, 255, 0.67)), to(rgba(255, 255, 255, 0.67))), url(../img/image15.png);
+    background: -o-linear-gradient(bottom, rgba(255, 255, 255, 0.67), rgba(255, 255, 255, 0.67)), url(../img/image15.png);
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0.67), rgba(255, 255, 255, 0.67)), url(../img/image15.png);
+}
+.galery__body {
+    width:750px;
+    min-height:144px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center; 
+}
+.galery__head{
+    position:absolute;
+    top: 15%;
+    width: 660px;
+}
+.galery__header{
+    position: relative;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    font-size: 11px;
+    font-weight: 900; 
+}
+.galery__text {
+    margin-top: 20px;
+    height: 144px;
+    left: 0%;
+    right: 0%;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 46px;
+    line-height: 64px;
+    text-align: center;
+    letter-spacing: -1.5px;
+    color: #000000;
+}
+.galery__button {
+    position: relative;
+    left: 30%;
+    margin-top: 20px;
+    width: 250px;
+    height: 50px;
+    background: #0AD1BD;
+    font-size: 11px;
+    font-weight: 900;
+    color: black;
+    text-align: center;
+    border: none;
+}
+.galery_row {
+    position:absolute;
+    bottom: 0;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    background: rgba(255, 255, 255, 0.78);
+    width: 100%;
+    height: 140px;
+   -webkit-box-align: center;
+   -webkit-align-items: center;
+       -ms-flex-align: center;
+           align-items: center;
+   -webkit-box-pack: center;
+   -webkit-justify-content: center;
+       -ms-flex-pack: center;
+           justify-content: center;
+}
+.galery__row-body{
+    width: 70%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-justify-content:space-around;
+        -ms-flex-pack:distribute;
+            justify-content:space-around;
+}
+.galery__colum {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+}
+.item-galery {
+    position: relative;
+    width: 150px;
+    height: 56px;
+}
+.item-about__icon {
+    position: absolute;
+    left: -48px;
+}
+.item-about__title {
+    font-size: 11px;
+    font-weight: 900;
+    font-family: normal;
+}
+.item-about__text {
+    margin-top: 10px;
+    color: #CDCCCCFF;
+    font-size: 12px;
+}
